@@ -1,0 +1,38 @@
+function somar(n1, n2) {
+    let resultado = n1 + n2;
+    console.log("Resultado é: " + resultado);
+}
+
+somar(10, 15);
+
+
+/*Função com Return*/
+function nomeCompleto(nome, sobrenome) {
+    return (`${nome} ${sobrenome}`);
+   /*Qualquer código após o "return", dentro da função é ignorado */ 
+}
+
+let completo = nomeCompleto("Nikola", "Tesla");
+    console.log("Completo: " + completo)
+
+/*Função com condicional*/
+function maiorDeIdade(idade) {
+    if(idade >= 18) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let idade = 65;
+    let verificacao = maiorDeIdade(idade);
+
+if(verificacao) {
+    console.log("É maior de Idade");
+} else {
+    console.log("É menor de Idade");
+}
+
+
+
+
